@@ -19,18 +19,18 @@ import static android.provider.AlarmClock.EXTRA_MESSAGE;
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.myapplication.MESSAGE";
 
-    Button button1;
-    Button button2;
-    ImageView image;
-    CheckBox checkbox;
+    private Button button1;
+    private Button button2;
+    private ImageView image;
+    private CheckBox checkbox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         addListenerOnButton();
-        image = (ImageView) findViewById(R.id.imageView1);
-        checkbox = (CheckBox) findViewById(R.id.checkboxVis);
+        image = findViewById(R.id.imageView1);
+        checkbox = findViewById(R.id.checkboxVis);
         checkbox.setChecked(true);
         checkbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -46,9 +46,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void addListenerOnButton() {
 
-        image = (ImageView) findViewById(R.id.imageView1);
+        image = findViewById(R.id.imageView1);
 
-        button1 = (Button) findViewById(R.id.but1);
+        button1 = findViewById(R.id.but1);
         button1.setOnClickListener(new OnClickListener() {
 
             @Override
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        button2 = (Button) findViewById(R.id.but2);
+        button2 = findViewById(R.id.but2);
         button2.setOnClickListener(new OnClickListener() {
 
             @Override
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     /** Called when the user taps the Send button */
     public void sendMessage(View view) {
         Intent intent = new Intent(this, TextViewActivity.class);
-        EditText editText = (EditText) findViewById(R.id.editText);
+        EditText editText = findViewById(R.id.editText);
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
