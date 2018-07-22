@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <SeekBar
+            android:id="@+id/seekRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:progress="0"
+            android:max="255"
+            android:background="@color/colorRed"/>
+
+        <SeekBar
+            android:id="@+id/seekGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:progress="0"
+            android:min="0"
+            android:max="255"
+            android:background="@color/colorGreen"/>
+
+        <SeekBar
+            android:id="@+id/seekBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:progress="0"
+            android:min="0"
+            android:max="255"
+            android:background="@color/colorBlue"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.2"
+            android:weightSum="3"
+            android:layout_marginTop="@dimen/marginTop">
+            <TextView
+                android:id="@+id/numberRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="@dimen/textNumbers_height"
+                android:text="@string/initial"/>
+            <TextView
+                android:id="@+id/numberGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="@dimen/textNumbers_height"
+                android:text="@string/initial"/>
+            <TextView
+                android:id="@+id/numberBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="@dimen/textNumbers_height"
+                android:text="@string/initial"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
