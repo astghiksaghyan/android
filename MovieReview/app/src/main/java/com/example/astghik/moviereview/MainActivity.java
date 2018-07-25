@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 "https://en.wikipedia.org/wiki/Titanic_(1997_film)");
         this.movies.add(movie2);
         Movie movie3 = new Movie("Superman", R.drawable.superman,
-                "Description of Superman", 4, true,
+                "Description of Superman", 4, false,
                 "https://en.wikipedia.org/wiki/Titanic_(1997_film)");
         this.movies.add(movie3);
         Movie movie4 = new Movie("Titanic", R.drawable.titanic,
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 "https://en.wikipedia.org/wiki/Titanic_(1997_film)");
         this.movies.add(movie4);
         Movie movie5 = new Movie("Avatar", R.drawable.avatar,
-                "Description of Avatar", 5, true,
+                "Description of Avatar", 5, false,
                 "https://en.wikipedia.org/wiki/Titanic_(1997_film)");
         this.movies.add(movie5);
         Movie movie6 = new Movie("Superman", R.drawable.superman,
