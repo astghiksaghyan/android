@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Header1">30sp</dimen>
+    <dimen name="img_size">80dp</dimen>
+    <dimen name="height">30dp</dimen>
+    <dimen name="icone_size">5dp</dimen>
+    <dimen name="card_height">200dp</dimen>
+    <dimen name="corner_radius">4dp</dimen>
+    <dimen name="margin">5dp</dimen>
+</resources>
