@@ -31,8 +31,9 @@
                 app:popupTheme="@style/AppTheme.PopupOverlay" />
             <ImageView
                 android:id="@+id/scrolling_image"
-                android:layout_width="@dimen/scrolling_image_size"
-                android:layout_height="@dimen/scrolling_image_size" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
 
 
 
@@ -49,6 +50,16 @@
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|end"
         app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@android:drawable/ic_menu_call"
+        android:layout_marginRight="@dimen/phone_icon_margin"/>
+
 
 
 </android.support.design.widget.CoordinatorLayout>

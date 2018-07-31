@@ -3,6 +3,8 @@ package com.example.astghik.searchexample;
 import android.app.SearchManager;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -20,6 +22,7 @@ public class UsersActivity extends AppCompatActivity {
     private List<User> users = new ArrayList<>();
     private UserAdapter userAdapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,23 +30,29 @@ public class UsersActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        RecyclerView rv = findViewById(R.id.recyclerView);
+        DataProvider.fillUsers();
+        users = DataProvider.users;
+        final RecyclerView rv = findViewById(R.id.recyclerView);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
-        setUsers();
+
         userAdapter = new UserAdapter(users, this);
         rv.setAdapter(userAdapter);
         rv.setLayoutManager(layoutManager);
+
+        addItem();
     }
 
-    private void setUsers() {
-        User user = new User("https://cdn.pixabay.com/photo/2017/01/06/23/21/soap-bubble-1959327_960_720.jpg", "Arman");
-        users.add(user);
-        user = new User("https://cdn.pixabay.com/photo/2017/01/06/23/21/soap-bubble-1959327_960_720.jpg", "Astghik");
-        users.add(user);
-        user = new User("https://cdn.pixabay.com/photo/2017/01/06/23/21/soap-bubble-1959327_960_720.jpg", "Mher");
-        users.add(user);
-        user = new User("https://cdn.pixabay.com/photo/2017/01/06/23/21/soap-bubble-1959327_960_720.jpg", "Samvel");
-        users.add(user);
+    private void addItem() {
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = "https://cdn.theatlantic.com/assets/media/img/photo/2015/11/images-from-the-2016-sony-world-pho/s01_130921474920553591/main_900.jpg?1448476701";
+                User user = new User(url, "Mukik", "Mukiky lav kendani e", "mukik@gmail.com", "099252525");
+                users.add(user);
+                userAdapter.notifyDataSetChanged();
+            }
+        });
     }
 
     @Override
