@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Databaze</string>
+    <string name="enter_some_text_here">Enter some text here!</string>
+    <string name="send">SEND</string>
+</resources>
