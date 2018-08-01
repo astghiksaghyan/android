@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TestProject</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_in_this_app">New in this app?</string>
+    <string name="submit">Submit</string>
+    <string name="go_back">Go back</string>
+    <string name="register">Register</string>
+    <string name="title_activity_home">HomeActivity</string>
+</resources>
