@@ -24,15 +24,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        createLoginFrag();
+    }
 
-
+    public void createLoginFrag() {
         final FragmentManager fm = getSupportFragmentManager();
         LoginFragment loginFrag = new LoginFragment();
         fm.beginTransaction().add(R.id.container, loginFrag).commit();
-
     }
-
-
-
-
 }

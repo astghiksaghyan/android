@@ -43,17 +43,16 @@ public class LoginFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
-
-        loginButSetOnclick(view);
+        final EditText editTextUser = view.findViewById(R.id.li_userName);
+        final EditText editTextPass = view.findViewById(R.id.li_password);
+        LoginButSetOnclick(view, editTextUser, editTextPass);
         textViewSetOnclick(view);
 
         // Inflate the layout for this fragment
         return view;
     }
 
-    private void loginButSetOnclick(View view) {
-        final EditText editTextUser = view.findViewById(R.id.li_userName);
-        final EditText editTextPass = view.findViewById(R.id.li_password);
+    private void LoginButSetOnclick(View view, final EditText editTextUser, final EditText editTextPass) {
         Button logIn = view.findViewById(R.id.li_but);
         logIn.setOnClickListener(new Button.OnClickListener() {
             @Override

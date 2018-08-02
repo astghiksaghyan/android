@@ -57,6 +57,9 @@ public class RegisterFragment extends Fragment {
                 usernameReg = String.valueOf(editTextUser.getText().toString());
                 passReg = String.valueOf(editTextPass.getText().toString());
                 register(usernameReg, passReg);
+                final FragmentManager fm = getActivity().getSupportFragmentManager();
+                LoginFragment loginFrag = new LoginFragment();
+                fm.beginTransaction().replace(R.id.container, loginFrag).commit();
             }
         });
     }
