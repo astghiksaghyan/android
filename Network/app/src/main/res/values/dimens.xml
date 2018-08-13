@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_height">150dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="image_size">60dp</dimen>
+    <dimen name="image_margin">10dp</dimen>
+    <dimen name="text_size">25sp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">20dp</dimen>
+    <dimen name="scrolling_image_size">150dp</dimen>
+    <dimen name="radius">15dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="elevation">90dp</dimen>
+    <dimen name="litle_dp">2dp</dimen>
+    <dimen name="margin">100dp</dimen>
+    <dimen name="margin_top">50dp</dimen>
+    <dimen name="card_margin_top">110dp</dimen>
+    <dimen name="phone_icon_margin">80dp</dimen>
+</resources>
