@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e1193e</color>
+    <color name="colorSlide_1">#f78686</color>
+    <color name="white">#ffffff</color>
+    <color name="active_dots">#f4e9e9</color>
+    <color name="inactive_dots">#83878b</color>
+    <color name="colorPrimaryDark">#d6000000</color>
+    <color name="colorAccent">#c6e20236</color>
+    <color name="btn_color">#1f871f</color>
+    <color name="transparent">#b8fdfdfd</color>
+    <color name="transparent_hamburger">#d7e9caab</color>
+    <color name="transparent2">#00f4f4f4</color>
+    <color name="home_page_meal_background">#87bcbcbc</color>
+    <color name="forgot_frag_color">#00ffffff</color>
+    <color name="blue">#00059c</color>
+    <color name="orange">#e69201</color>
+    <color name="green">#11ff00</color>
+    <color name="black">#000000</color>
+    <color name="about_page_text_color">#692530</color>
+    <color name="setting_page_opacity">#59ffffff</color>
+    <color name="about_page_opacity">#99ffffff</color>
+
+</resources>

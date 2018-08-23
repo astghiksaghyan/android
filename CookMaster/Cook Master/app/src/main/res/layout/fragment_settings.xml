@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.SettingsFragment"
+    android:background="@drawable/background_for_settings"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/change_language"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@color/transparent_hamburger"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/change_language_icon"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:src="@drawable/ic_language" />
+
+        <TextView
+            android:id="@+id/change_language_text"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/change_language"
+            android:textSize="18sp"/>
+
+        <com.haipq.android.flagkit.FlagImageView
+            android:id="@+id/flag_view"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="25dp"
+            android:layout_gravity="end|center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/change_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="1"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:background="@color/transparent_hamburger"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/change_password_icon"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:src="@drawable/ic_change_password" />
+
+        <TextView
+            android:id="@+id/change_password_text"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/change_password"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_left_right"
+    android:layout_marginLeft="@dimen/imageMarginTopSize"
+    android:layout_marginRight="@dimen/imageMarginTopSize"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/consultatnt_image"
+        android:layout_width="@dimen/daily_meal_size"
+        android:layout_height="@dimen/daily_meal_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/pass_margin_bottom"
+        android:src="@drawable/default_image"/>
+
+    <TextView
+        android:id="@+id/consultant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/daily_meal_margin"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/usernameSize"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Name Surname"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <TextView
+        android:id="@+id/consultant_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/daily_meal_margin"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/usernameSize"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:text="consultant@gmail.com"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <TextView
+        android:id="@+id/consultant_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/daily_meal_margin"
+        android:layout_marginBottom="@dimen/daily_meal_margin"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/usernameSize"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        android:text="Phone Number"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+</LinearLayout>

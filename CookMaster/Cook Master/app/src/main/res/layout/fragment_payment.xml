@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fruits"
+    >
+
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="18dp"
+        android:background="#CFC4C7DA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="220dp"
+        android:background="#CFC4C7DA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/pay_Btn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_marginStart="18dp"
+        android:text="PAY"
+        android:textColor="#FFFFFFFF"
+        android:background="#FF4DE955"/>
+    <TextView
+        android:id="@+id/last_paid_txt"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="70dp"
+        android:text="Last paid amount"/>
+
+    <TextView
+        android:id="@+id/payment_status_txt"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="130dp"
+        android:text="Payment status"/>
+
+    <TextView
+        android:id="@+id/last_paid_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="65dp"
+        android:text="5000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/money_txt"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="300dp"
+        android:text="Money"/>
+    <EditText
+        android:id="@+id/money_ET"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:hint="Enter money"
+        android:layout_marginTop="290dp"
+        android:layout_marginStart="120dp"
+        android:inputType="number"/>
+
+    <ImageView
+        android:id="@+id/pepperImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginStart="260dp"
+        />
+
+</FrameLayout>

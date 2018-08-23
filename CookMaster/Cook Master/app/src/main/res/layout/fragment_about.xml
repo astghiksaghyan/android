@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/about_page_background"
+    tools:mContext=".fragments.AboutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/about_page_main_margin"
+        android:background="@color/about_page_opacity"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/logo_width"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="@string/instigate_mobile_cjsc"
+            android:textColor="@color/about_page_text_color"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/about_page_text_marginBottom"
+            android:textAlignment="center"
+            android:text="@string/producted_by_itc_9"
+            android:textColor="@color/about_page_text_color"
+            android:textSize="@dimen/about_page_textSize_ITC9"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/our_team"
+            android:layout_marginBottom="@dimen/about_page_text_marginBottom"
+            android:textColor="@color/about_page_text_color"
+            android:textSize="@dimen/about_page_textSize_team"
+            android:textStyle="bold|italic" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/about_page_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/manager_image"
+            android:layout_width="@dimen/about_page_image_size"
+            android:layout_height="@dimen/about_page_image_size"
+            android:layout_gravity="center"
+            android:src="@drawable/taron"/>
+        <TextView
+            android:id="@+id/manager_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/taron"
+            android:textSize="@dimen/about_page_text_size"
+            android:textColor="@color/about_page_text_color"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

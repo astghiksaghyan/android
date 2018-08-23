@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="instigatemobile.com.cookmaster">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cook_master_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".notifications.FirebaseMessagingServiceClass"
+            android:permission="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/cook_master_launcher" />
+
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginForgotPasswordActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activities.HomePageActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activities.SettingsAndAboutActivity"
+            android:parentActivityName=".activities.HomePageActivity"
+            android:screenOrientation="portrait" />
+        <service
+            android:name=".CheckStatusService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <receiver android:name=".GetFirebaseDateBroadcast">
+        </receiver>
+    </application>
+
+</manifest>

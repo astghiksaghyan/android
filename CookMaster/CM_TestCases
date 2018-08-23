@@ -1,0 +1,48 @@
+1. Test Cases
+
+1.1 Payment History Page
+
+Test 1:
+
+Preconditions: The user is loged in, pressed hamburger and is transfered to the Payment History Page
+
+Expected Behavior: The page have the following items
+
+	1.Hamburger
+	2.Title "History"
+	3.Settings button
+	4.Available months
+	5.Background image
+
+Test 2:
+
+Preconditions: The user is loged in, pressed hamburger and is transfered to the Payment History Page
+
+Step 1. The user taps on month
+
+Expected Behavior: The selected month's list is opened with the following items:
+
+	1. Titles "Date" and "Daily expens"
+	2. List rows with items date and expens
+	3. "Total expens"
+	4. Sum, witch is equal to sum of all daily expenses
+ 
+Test 3:
+
+Preconditions: The user is loged in, taped settings button, change language and transfered to the Payment History Page
+
+Expected Behavior: The month's list is displayed with the selected language text
+ 
+
+1.2. Loge out button
+
+Test 1:
+
+Preconditions: The user is loged in and pressed hamburger
+
+Steps:
+
+Step 1. The user taps on Loge out button
+
+Expected Behavior: The loge in page is opened:
+

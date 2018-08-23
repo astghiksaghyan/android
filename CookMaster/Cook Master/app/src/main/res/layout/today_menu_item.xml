@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/meal_image"
+        android:layout_width="@dimen/daily_meal_size"
+        android:layout_height="@dimen/daily_meal_size"
+        android:layout_marginTop="@dimen/daily_meal_margin"
+        android:layout_marginLeft="@dimen/daily_meal_margin"
+        android:layout_marginRight="@dimen/daily_meal_margin"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/meal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/daily_meal_margin"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/usernameSize"
+        android:textStyle="bold"
+        android:textColor="@color/about_page_text_color"
+        android:fontFamily="sans-serif-smallcaps" />
+
+</LinearLayout>
